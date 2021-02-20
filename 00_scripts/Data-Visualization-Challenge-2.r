@@ -60,7 +60,7 @@ covid_world_mortality_rate_countries_tbl<-covid_world_mortality_rate_countries_t
     covid_combined_world_mortality_rate <- left_join(covid_world_mortality_rate_countries_tbl,covid_world_mortality_rate_tbl, by = c("countriesAndTerritories"))
 
     ggplot(data = covid_combined_world_mortality_rate) +
-    geom_polygon(aes(x = long, y = lat, group = group, fill = Mortality_Rates), color= "white")
+    geom_polygon(aes(x = long, y = lat, group = group, fill = Mortality_Rates), color= "red")
                   
   
  
